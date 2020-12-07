@@ -14,4 +14,5 @@ fi
 
 name="$(printf "day%02d" "$1")"
 cargo new --bin "$name"
+cp template/main.rs "$name/src"
 mkdir "$name/input"
