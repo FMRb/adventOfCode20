@@ -15,4 +15,6 @@ fi
 name="$(printf "day%02d" "$1")"
 cargo new --bin "$name"
 cp template/main.rs "$name/src"
+touch "$name/README.md"
+echo "- [day $1](./$name/README.md)" >> ./README.md
 mkdir "$name/input"
